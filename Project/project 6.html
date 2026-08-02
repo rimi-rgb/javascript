@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyboard Check</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.box{
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px;
+    font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Keyboard Check</h1>
+
+<div class="box" id="result">
+    Press any key...
+</div>
+
+<script>
+document.addEventListener("keydown", function(event){
+
+    document.getElementById("result").innerHTML =
+    "Key: " + event.key + "<br>" +
+    "Key Code: " + event.keyCode;
+
+});
+</script>
+
+</body>
+</html>
