@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+
+</body>
+    <script>
+       // function init(){
+        //var name = "gonji";
+        //function displayName(){
+        //    console.log(name);
+            
+       // }
+        //displayName();
+    //}
+      //  init();
+
+        function outre(){
+            let username = 'rimi'
+            function inner(){
+                let secret = "my123"
+                console.log("inner", username);
+                
+            }
+            function innerTow(){
+            console.log("innerTwo", username);
+            console.log(secret);
+            
+            }            
+            inner()
+            innerTow()
+        }
+        outer()
+        console.log("TOO OUTER", username);
+        
+
+
+    </script>
+
+</html>
